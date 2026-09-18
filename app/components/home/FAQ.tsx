@@ -18,11 +18,11 @@ export default function FAQ() {
       <div className="mx-auto max-w-3xl px-6">
         <ScrollReveal>
           <div className="text-center">
-            <h2 className="text-[20px] font-bold text-[#102d45] sm:text-[24px]">
+            <h2 className="text-[28px] font-bold tracking-[-0.03em] text-[#102d45] sm:text-[36px] lg:text-[42px]">
               Frequently Asked Questions
             </h2>
 
-            <p className="mt-2 text-sm text-[#71879a]">
+            <p className="mt-3 text-base text-[#71879a] sm:text-lg lg:text-xl">
               Get answers to common questions about our solutions
             </p>
           </div>

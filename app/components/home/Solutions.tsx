@@ -31,11 +31,11 @@ export default function Solutions() {
 
                 <IconBox icon={solution.icon} />
 
-                <h3 className="mt-5 text-lg font-bold text-[#18364d]">
+                <h3 className="mt-5 text-xl font-bold text-[#18364d]">
                   {solution.title}
                 </h3>
 
-                <p className="mt-2 text-sm text-[#718697]">
+                <p className="mt-3 text-base leading-relaxed text-[#718697]">
                   {solution.description}
                 </p>
 
@@ -43,7 +43,7 @@ export default function Solutions() {
                   {solution.features.map((feature) => (
                     <li
                       key={feature}
-                      className="flex items-center gap-2 text-sm text-[#5f7587]"
+                      className="flex items-center gap-2 text-base text-[#5f7587]"
                     >
                       <CheckCircle2 className="h-4 w-4 shrink-0 text-[#08afe8]" />
                       {feature}

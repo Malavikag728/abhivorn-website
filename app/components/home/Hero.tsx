@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import styles from "@/page.module.css";
 
 export default function Hero() {
   return (
@@ -33,7 +34,7 @@ export default function Hero() {
             </ScrollReveal>
 
             <ScrollReveal delay={100}>
-              <h1 className="mt-7 max-w-[760px] text-[clamp(2.6rem,8vw,4.6rem)] font-bold leading-[0.98] tracking-[-0.045em] text-slate-800">
+              <h1 className={`${styles.heroTitle} mt-7 max-w-[760px] font-bold leading-none tracking-[-0.045em] text-slate-800`}>
                 Custom Software,
                 <br />
 

@@ -1,13 +1,13 @@
 .page { overflow-x: clip; }
 .page :global(section) { scroll-margin-top: 7rem; }
-.badge { display: inline-flex; align-items: center; gap: 4px; border-radius: 999px; background: #e1f7fd; color: #087f9c; font-size: 8px; font-weight: 700; padding: 5px 9px; }
-.primaryButton, .secondaryButton, .ctaOutline { display: inline-flex; align-items: center; justify-content: center; gap: 5px; border-radius: 5px; padding: 9px 15px; font-size: 8px; font-weight: 700; transition: transform 180ms ease, background-color 180ms ease; }
+.badge { display: inline-flex; align-items: center; gap: 4px; border-radius: 999px; background: #e1f7fd; color: #087f9c; font-size: 13px; font-weight: 700; padding: 5px 9px; }
+.primaryButton, .secondaryButton, .ctaOutline { display: inline-flex; align-items: center; justify-content: center; gap: 5px; border-radius: 5px; padding: 9px 15px; font-size: 13px; font-weight: 700; transition: transform 180ms ease, background-color 180ms ease; }
 .primaryButton { background: #08b7f2; color: white; box-shadow: 0 5px 14px rgb(8 174 232 / 18%); }
 .primaryButton:hover, .secondaryButton:hover, .priceButton:hover { transform: translateY(-2px); }
 .secondaryButton { border: 1px solid #cbdde5; color: #17364f; }
 .videoCard { position: relative; overflow: hidden; border: 4px solid white; border-radius: 10px; background: #dff7fd; box-shadow: 0 15px 35px rgb(8 174 232 / 20%); transform: rotate(-1deg); }
 .videoCard video { display: block; aspect-ratio: 16 / 9; width: 100%; object-fit: cover; }
-.videoCard span { position: absolute; right: 8px; top: 8px; display: inline-flex; align-items: center; gap: 3px; border-radius: 3px; background: white; padding: 5px; font-size: 7px; }
+.videoCard span { position: absolute; right: 8px; top: 8px; display: inline-flex; align-items: center; gap: 3px; border-radius: 3px; background: white; padding: 5px; font-size: 12px; }
 .featureIcon, .moduleIcon { display: flex; align-items: center; justify-content: center; margin-inline: auto; border-radius: 5px; background: #e1f7fd; color: #08afe8; }
 .featureIcon { height: 28px; width: 28px; }
 .moduleIcon { height: 32px; width: 32px; margin-inline: 0; }
@@ -16,14 +16,14 @@
 .priceCard { position: relative; min-height: 275px; }
 .featuredPrice { border: 2px solid #056b86; background: #056b86; color: white; box-shadow: 0 12px 25px rgb(5 107 134 / 25%); }
 .featuredPrice li, .featuredPrice p { color: rgb(255 255 255 / 75%); }
-.bestValue { position: absolute; right: 12px; top: -8px; border-radius: 999px; background: #08b7f2; color: white; font-size: 6px; font-weight: 700; padding: 3px 6px; }
-.priceButton, .enterpriseButton { position: absolute; bottom: 14px; left: 14px; right: 14px; display: flex; align-items: center; justify-content: center; gap: 4px; border: 1px solid #08afe8; border-radius: 5px; color: #079fd5; font-size: 7px; font-weight: 700; padding: 7px; transition: transform 180ms ease, background-color 180ms ease; }
+.bestValue { position: absolute; right: 12px; top: -8px; border-radius: 999px; background: #08b7f2; color: white; font-size: 11px; font-weight: 700; padding: 3px 6px; }
+.priceButton, .enterpriseButton { position: absolute; bottom: 14px; left: 14px; right: 14px; display: flex; align-items: center; justify-content: center; gap: 4px; border: 1px solid #08afe8; border-radius: 5px; color: #079fd5; font-size: 12px; font-weight: 700; padding: 7px; transition: transform 180ms ease, background-color 180ms ease; }
 .featuredPrice .priceButton { background: #08b7f2; border-color: #08b7f2; color: white; }
 .enterpriseCard { position: relative; min-height: 275px; text-align: center; }
 .enterpriseButton { background: #09243a; border-color: #09243a; color: white; }
 .faq { border: 1px solid #d3e1e8; border-radius: 5px; background: white; }
-.faq button { display: flex; width: 100%; align-items: center; justify-content: space-between; padding: 10px 12px; color: #17364f; cursor: pointer; font-size: 8px; text-align: left; }
-.faq p { border-top: 1px solid #edf2f4; padding: 9px 12px; color: #718697; font-size: 8px; line-height: 1.5; }
+.faq button { display: flex; width: 100%; align-items: center; justify-content: space-between; padding: 10px 12px; color: #17364f; cursor: pointer; font-size: 13px; text-align: left; }
+.faq p { border-top: 1px solid #edf2f4; padding: 9px 12px; color: #718697; font-size: 13px; line-height: 1.5; }
 .ctaOutline { border: 1px solid white; color: white; }
 @media (max-width: 640px) { .page :global(section) { scroll-margin-top: 4rem; } .videoCard { transform: none; } }
 @media (prefers-reduced-motion: reduce) { .primaryButton, .secondaryButton, .moduleCard, .priceCard, .enterpriseCard, .priceButton { transition: none; } }

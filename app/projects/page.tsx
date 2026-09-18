@@ -91,7 +91,7 @@ export default function ProjectsPage() {
             <h1 className="text-[28px] font-bold tracking-[-0.04em] sm:text-5xl">
               Real Results for <span className="text-[#08afe8]">Real Businesses</span>
             </h1>
-            <p className="mx-auto mt-3 max-w-xl text-[10px] text-[#718697] sm:text-sm">
+            <p className="mx-auto mt-3 max-w-xl text-base text-[#718697] sm:text-lg">
               Case studies showcasing our expertise across industries
             </p>
           </ScrollReveal>
@@ -120,20 +120,20 @@ export default function ProjectsPage() {
                 <article className={styles.projectCard} tabIndex={0}>
                   <div className="flex flex-wrap items-center gap-2">
                     <span className={styles.category}>{project.category}</span>
-                    <span className="text-[8px] text-[#718697]">Timeline: {project.timeline}</span>
+                    <span className="text-[13px] text-[#718697]">Timeline: {project.timeline}</span>
                   </div>
                   <h2 className="mt-3 text-sm font-bold text-[#092c48] sm:text-lg">{project.title}</h2>
-                  <div className="mt-3 grid gap-4 text-[8px] leading-relaxed text-[#718697] sm:grid-cols-2 sm:text-[10px]">
+                  <div className="mt-3 grid gap-4 text-[13px] leading-relaxed text-[#718697] sm:grid-cols-2 sm:text-[15px]">
                     <div><h3 className="mb-1 font-bold text-[#17364f]">Challenge</h3><p>{project.challenge}</p></div>
                     <div><h3 className="mb-1 font-bold text-[#17364f]">Solution</h3><p>{project.solution}</p></div>
                   </div>
                   <div className={styles.results}>
-                    <p className="flex items-center gap-1 text-[8px] font-semibold text-[#087f9c]"><TrendingUp className="h-2.5 w-2.5" /> Results</p>
+                    <p className="flex items-center gap-1 text-[13px] font-semibold text-[#087f9c]"><TrendingUp className="h-2.5 w-2.5" /> Results</p>
                     <div className="mt-2 grid grid-cols-3 gap-2 text-center">
-                      {project.metrics.map(([value, label]) => <div key={label}><p className="text-sm font-bold text-[#00aeea] sm:text-lg">{value}</p><p className="text-[7px] text-[#718697] sm:text-[8px]">{label}</p></div>)}
+                      {project.metrics.map(([value, label]) => <div key={label}><p className="text-sm font-bold text-[#00aeea] sm:text-lg">{value}</p><p className="text-[12px] text-[#718697] sm:text-[13px]">{label}</p></div>)}
                     </div>
                   </div>
-                  <div className="mt-3 flex flex-wrap items-center gap-1.5 text-[7px] text-[#718697]">
+                  <div className="mt-3 flex flex-wrap items-center gap-1.5 text-[12px] text-[#718697]">
                     <span className="mr-1 font-semibold text-[#17364f]">Technologies:</span>
                     {project.technologies.map((technology) => <span key={technology} className={styles.tech}><Check className="h-2 w-2 text-[#079fd5]" />{technology}</span>)}
                   </div>
@@ -146,15 +146,15 @@ export default function ProjectsPage() {
 
         <section className="bg-[#f7fafc] px-5 py-12 sm:px-6 sm:py-16">
           <ScrollReveal>
-            <div className="text-center"><h2 className="text-xl font-bold sm:text-2xl">What Our Clients Say</h2><p className="mt-2 text-[9px] text-[#718697]">Hear from businesses we’ve helped transform</p></div>
+            <div className="text-center"><h2 className="text-2xl font-bold tracking-[-0.02em] sm:text-3xl">What Our Clients Say</h2><p className="mt-2 text-[14px] text-[#718697]">Hear from businesses we’ve helped transform</p></div>
           </ScrollReveal>
           <div className="mx-auto mt-8 grid max-w-5xl gap-4 sm:grid-cols-3">
-            {testimonials.map(([quote, role, company], index) => <ScrollReveal key={role} delay={index * 90}><article className={styles.testimonial}><div className="flex gap-0.5 text-[#00aeea]">{Array.from({ length: 5 }).map((_, starIndex) => <Star key={starIndex} className="h-3 w-3 fill-current" />)}</div><p className="mt-3 text-[9px] italic leading-relaxed text-[#526a7b]">{quote}</p><p className="mt-4 text-[8px] font-bold text-[#17364f]">{role}</p><p className="text-[8px] text-[#718697]">{company}</p></article></ScrollReveal>)}
+            {testimonials.map(([quote, role, company], index) => <ScrollReveal key={role} delay={index * 90}><article className={styles.testimonial}><div className="flex gap-0.5 text-[#00aeea]">{Array.from({ length: 5 }).map((_, starIndex) => <Star key={starIndex} className="h-3 w-3 fill-current" />)}</div><p className="mt-3 text-[14px] italic leading-relaxed text-[#526a7b]">{quote}</p><p className="mt-4 text-[13px] font-bold text-[#17364f]">{role}</p><p className="text-[13px] text-[#718697]">{company}</p></article></ScrollReveal>)}
           </div>
         </section>
 
         <section className="bg-[#056b86] px-5 py-12 text-center text-white sm:py-14">
-          <ScrollReveal><h2 className="text-xl font-bold sm:text-2xl">Ready to See Similar Results?</h2><p className="mt-3 text-[9px] text-white/80">Let’s discuss how we can help transform your business operations.</p><Link href="/contact" className="mt-5 inline-flex items-center gap-1 rounded-md bg-[#08b7f2] px-5 py-2.5 text-[9px] font-bold transition hover:bg-[#079fd5]">Start Your Project <ArrowRight className="h-3 w-3" /></Link></ScrollReveal>
+          <ScrollReveal><h2 className="text-2xl font-bold tracking-[-0.02em] sm:text-3xl">Ready to See Similar Results?</h2><p className="mt-3 text-[14px] text-white/80">Let’s discuss how we can help transform your business operations.</p><Link href="/contact" className="mt-5 inline-flex items-center gap-1 rounded-md bg-[#08b7f2] px-5 py-2.5 text-[14px] font-bold transition hover:bg-[#079fd5]">Start Your Project <ArrowRight className="h-3 w-3" /></Link></ScrollReveal>
         </section>
       </main>
       <Footer />

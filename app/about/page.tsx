@@ -36,7 +36,7 @@ export default function AboutPage() {
             <h1 className="mx-auto max-w-2xl text-3xl font-bold leading-tight sm:text-5xl">
               Building the Future of <span className="text-[#08afe8]">Enterprise Software</span>
             </h1>
-            <p className="mx-auto mt-5 max-w-2xl text-xs leading-relaxed text-[#718697] sm:text-sm">
+            <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-[#718697] sm:text-lg">
               Founded in 2025, headquartered in Hyderabad. We&apos;re an MSME-registered software
               company specializing in HR and healthcare solutions.
             </p>
@@ -47,19 +47,19 @@ export default function AboutPage() {
           <div className="mx-auto grid max-w-5xl items-center gap-10 lg:grid-cols-2">
             <ScrollReveal>
               <div>
-                <h2 className="text-xl font-bold sm:text-2xl">Our Story</h2>
-                <p className="mt-4 text-xs leading-relaxed text-[#718697]">
+                <h2 className="text-2xl font-bold tracking-[-0.02em] sm:text-3xl">Our Story</h2>
+                <p className="mt-4 text-sm leading-relaxed text-[#718697]">
                   Abhivorn Technologies was founded with a clear vision: to make enterprise-grade
                   software accessible to businesses of all sizes across India.
                 </p>
-                <p className="mt-3 text-xs leading-relaxed text-[#718697]">
+                <p className="mt-3 text-sm leading-relaxed text-[#718697]">
                   Starting with our flagship product VORN HR, we&apos;ve helped companies streamline
                   their HR operations, reduce administrative overhead, and focus on what matters —
                   growth, service quality, and customer trust.
                 </p>
                 <div className="mt-5 flex flex-wrap gap-2">
-                  <span className="rounded-full bg-[#e8f9fe] px-3 py-1 text-[9px] font-semibold text-[#078bb9]">MSME Registered</span>
-                  <span className="rounded-full bg-[#e8f9fe] px-3 py-1 text-[9px] font-semibold text-[#078bb9]">10+ Team Members</span>
+                  <span className="rounded-full bg-[#e8f9fe] px-3 py-1 text-[14px] font-semibold text-[#078bb9]">MSME Registered</span>
+                  <span className="rounded-full bg-[#e8f9fe] px-3 py-1 text-[14px] font-semibold text-[#078bb9]">10+ Team Members</span>
                 </div>
               </div>
             </ScrollReveal>
@@ -77,7 +77,7 @@ export default function AboutPage() {
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#102d45]/90 to-transparent p-5 pt-12 text-white">
                   <p className="text-sm font-bold">Abhivorn Technologies</p>
-                  <p className="text-[10px] text-white/80">Our Hyderabad Development Center</p>
+                  <p className="text-[15px] text-white/80">Our Hyderabad Development Center</p>
                 </div>
               </div>
             </ScrollReveal>
@@ -88,8 +88,8 @@ export default function AboutPage() {
           <div className="mx-auto max-w-5xl">
             <ScrollReveal>
               <div className="text-center">
-                <h2 className="text-xl font-bold sm:text-2xl">Our Core Values</h2>
-                <p className="mt-2 text-[10px] text-[#718697]">The principles that guide everything we do</p>
+                <h2 className="text-2xl font-bold tracking-[-0.02em] sm:text-3xl">Our Core Values</h2>
+                <p className="mt-2 text-base text-[#718697]">The principles that guide everything we do</p>
               </div>
             </ScrollReveal>
             <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -99,8 +99,8 @@ export default function AboutPage() {
                     <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-lg bg-[#e0f6fd] text-[#08afe8]">
                       <Icon className="h-5 w-5" />
                     </div>
-                    <h3 className="mt-3 text-xs font-bold">{title}</h3>
-                    <p className="mt-2 text-[9px] leading-relaxed text-[#718697]">{text}</p>
+                    <h3 className="mt-3 text-base font-bold">{title}</h3>
+                    <p className="mt-2 text-[14px] leading-relaxed text-[#718697]">{text}</p>
                   </article>
                 </ScrollReveal>
               ))}
@@ -112,8 +112,8 @@ export default function AboutPage() {
           <div className="mx-auto max-w-3xl">
             <ScrollReveal>
               <div className="text-center">
-                <h2 className="text-xl font-bold sm:text-2xl">Our Journey</h2>
-                <p className="mt-2 text-[10px] text-[#718697]">Key milestones in our growth story</p>
+                <h2 className="text-2xl font-bold tracking-[-0.02em] sm:text-3xl">Our Journey</h2>
+                <p className="mt-2 text-base text-[#718697]">Key milestones in our growth story</p>
               </div>
             </ScrollReveal>
             <div className="relative mt-10 space-y-5 before:absolute before:bottom-4 before:left-[15px] before:top-4 before:w-px before:bg-[#cfe5ed]">
@@ -124,9 +124,9 @@ export default function AboutPage() {
                       <CalendarDays className="h-4 w-4" />
                     </div>
                     <div className="pt-0.5">
-                      <p className="text-[9px] text-[#08afe8]">{date}</p>
-                      <h3 className="mt-1 text-xs font-bold">{title}</h3>
-                      <p className="mt-1 text-[9px] text-[#718697]">{text}</p>
+                      <p className="text-[14px] text-[#08afe8]">{date}</p>
+                      <h3 className="mt-1 text-base font-bold">{title}</h3>
+                      <p className="mt-1 text-[14px] text-[#718697]">{text}</p>
                     </div>
                   </article>
                 </ScrollReveal>
@@ -138,10 +138,10 @@ export default function AboutPage() {
         <section className="bg-[#056b86] px-6 py-14 text-center text-white sm:py-20">
           <ScrollReveal>
             <h2 className="text-2xl font-bold">Want to Join Our Team?</h2>
-            <p className="mx-auto mt-3 max-w-md text-[10px] leading-relaxed text-white/80">
+            <p className="mx-auto mt-3 max-w-md text-[15px] leading-relaxed text-white/80">
               We&apos;re always looking for talented individuals to help us build the future of enterprise software.
             </p>
-            <Link href="/careers" className="mt-6 inline-flex rounded-md bg-[#08b7f2] px-5 py-2 text-[10px] font-bold transition hover:bg-[#079fd5]">
+            <Link href="/careers" className="mt-6 inline-flex rounded-md bg-[#08b7f2] px-5 py-2 text-[15px] font-bold transition hover:bg-[#079fd5]">
               View Open Positions
             </Link>
           </ScrollReveal>

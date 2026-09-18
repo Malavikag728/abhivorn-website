@@ -145,7 +145,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/20 pt-5">
-          <div className="flex flex-col justify-between gap-3 text-[8px] text-white/70 sm:flex-row">
+          <div className="flex flex-col justify-between gap-3 text-[13px] text-white/70 sm:flex-row">
             <p>
               © 2025 Abhivorn Technologies Pvt Ltd. All rights reserved.
             </p>

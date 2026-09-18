@@ -21,11 +21,11 @@ export default function WhyChooseUs() {
                   {item.value}
                 </p>
 
-                <h3 className="mt-2 text-sm font-bold text-[#214158] sm:text-base">
+                <h3 className="mt-3 text-base font-bold text-[#214158] sm:text-lg">
                   {item.title}
                 </h3>
 
-                <p className="mx-auto mt-2 max-w-[190px] text-xs leading-relaxed text-[#7890a0]">
+                <p className="mx-auto mt-3 max-w-[240px] text-sm leading-relaxed text-[#7890a0] sm:text-base">
                   {item.description}
                 </p>
               </article>

@@ -91,7 +91,7 @@ export default function ProductsPage() {
             <h1 className="mx-auto max-w-2xl text-[28px] font-bold leading-tight tracking-[-0.035em] sm:text-5xl">
               Enterprise-Grade <span className="text-[#08afe8]">SaaS Solutions</span>
             </h1>
-            <p className="mx-auto mt-4 max-w-xl text-[11px] leading-relaxed text-[#718697] sm:text-sm">
+            <p className="mx-auto mt-4 max-w-xl text-[11px] leading-relaxed text-[#718697] sm:text-lg">
               Ready-to-deploy products built for modern businesses. Choose the solution that fits your needs.
             </p>
           </ScrollReveal>
@@ -110,37 +110,37 @@ export default function ProductsPage() {
                           <ProductIcon className="h-5 w-5" />
                         </div>
                         <div>
-                          <h2 className="text-sm font-bold">{product.name}</h2>
-                          <p className="text-[9px] text-[#718697]">{product.description}</p>
+                          <h2 className="text-lg font-bold">{product.name}</h2>
+                          <p className="text-[14px] text-[#718697]">{product.description}</p>
                         </div>
                       </div>
 
-                      <p className="mt-4 text-[9px] leading-relaxed text-[#718697]">{product.summary}</p>
+                      <p className="mt-4 text-[14px] leading-relaxed text-[#718697]">{product.summary}</p>
 
                       <div className="mt-4 grid grid-cols-3 rounded-md bg-[#f5f8fa] px-2 py-2.5 text-center">
                         {product.stats.map(([value, label]) => (
                           <div key={label}>
                             <p className="text-sm font-bold text-[#087492]">{value}</p>
-                            <p className="mt-0.5 text-[7px] text-[#718697]">{label}</p>
+                            <p className="mt-0.5 text-[12px] text-[#718697]">{label}</p>
                           </div>
                         ))}
                       </div>
 
                       <div className="mt-4 grid gap-x-4 gap-y-2 sm:grid-cols-2">
                         {product.features.map((feature) => (
-                          <p key={feature} className="flex items-start gap-1 text-[8px] text-[#5f7587]">
+                          <p key={feature} className="flex items-start gap-1 text-[13px] text-[#5f7587]">
                             <CheckCircle2 className="mt-px h-2.5 w-2.5 shrink-0 text-[#087f9c]" />
                             {feature}
                           </p>
                         ))}
                       </div>
 
-                      <p className="mt-4 text-[9px] font-semibold text-[#17364f]">{product.price}</p>
+                      <p className="mt-4 text-[14px] font-semibold text-[#17364f]">{product.price}</p>
                       <div className="mt-3 flex gap-2">
-                        <Link href={product.href} className="flex flex-1 items-center justify-center gap-1 rounded-md bg-[#08b7f2] px-3 py-2 text-[8px] font-bold text-white transition hover:bg-[#079fd5]">
+                        <Link href={product.href} className="flex flex-1 items-center justify-center gap-1 rounded-md bg-[#08b7f2] px-3 py-2 text-[13px] font-bold text-white transition hover:bg-[#079fd5]">
                           Learn More <ArrowRight className="h-2.5 w-2.5" />
                         </Link>
-                        <Link href="/contact" className="rounded-md border border-[#08789e] px-3 py-2 text-[8px] font-semibold text-[#075a7c] transition hover:bg-[#e9f9ff]">
+                        <Link href="/contact" className="rounded-md border border-[#08789e] px-3 py-2 text-[13px] font-semibold text-[#075a7c] transition hover:bg-[#e9f9ff]">
                           Get Demo
                         </Link>
                       </div>
@@ -156,8 +156,8 @@ export default function ProductsPage() {
           <div className="mx-auto max-w-5xl">
             <ScrollReveal>
               <div className="text-center">
-                <h2 className="text-xl font-bold sm:text-2xl">Why Choose Our Products?</h2>
-                <p className="mt-2 text-[10px] text-[#718697]">Built with enterprise needs in mind</p>
+                <h2 className="text-2xl font-bold tracking-[-0.02em] sm:text-3xl">Why Choose Our Products?</h2>
+                <p className="mt-2 text-base text-[#718697]">Built with enterprise needs in mind</p>
               </div>
             </ScrollReveal>
             <div className="mt-9 grid gap-8 sm:grid-cols-3 sm:gap-5">
@@ -167,8 +167,8 @@ export default function ProductsPage() {
                     <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-md bg-[#e0f6fd] text-[#08afe8]">
                       <Icon className="h-5 w-5" />
                     </div>
-                    <h3 className="mt-3 text-[10px] font-bold">{title}</h3>
-                    <p className="mt-2 text-[8px] text-[#718697]">{description}</p>
+                    <h3 className="mt-3 text-[15px] font-bold">{title}</h3>
+                    <p className="mt-2 text-[13px] text-[#718697]">{description}</p>
                   </article>
                 </ScrollReveal>
               ))}
@@ -178,11 +178,11 @@ export default function ProductsPage() {
 
         <section className="bg-[#056b86] px-5 py-12 text-center text-white sm:py-14">
           <ScrollReveal>
-            <h2 className="text-xl font-bold sm:text-2xl">Ready to Transform Your Business?</h2>
-            <p className="mx-auto mt-3 max-w-lg text-[9px] text-white/80">
+            <h2 className="text-2xl font-bold tracking-[-0.02em] sm:text-3xl">Ready to Transform Your Business?</h2>
+            <p className="mx-auto mt-3 max-w-lg text-[14px] text-white/80">
               Schedule a demo to see how our products can help streamline your operations.
             </p>
-            <Link href="/contact" className="mt-5 inline-flex items-center gap-1 rounded-md bg-[#08b7f2] px-5 py-2.5 text-[9px] font-bold transition hover:bg-[#079fd5]">
+            <Link href="/contact" className="mt-5 inline-flex items-center gap-1 rounded-md bg-[#08b7f2] px-5 py-2.5 text-[14px] font-bold transition hover:bg-[#079fd5]">
               Book a Free Demo <ArrowRight className="h-3 w-3" />
             </Link>
           </ScrollReveal>

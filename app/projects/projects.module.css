@@ -12,7 +12,7 @@
   background: #f6f9fb;
   color: #718697;
   cursor: pointer;
-  font-size: 8px;
+  font-size: 13px;
   font-weight: 600;
   padding: 4px 9px;
   transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
@@ -51,7 +51,7 @@
   border-radius: 999px;
   background: #e3f8fe;
   color: #087f9c;
-  font-size: 7px;
+  font-size: 12px;
   font-weight: 600;
   padding: 3px 7px;
 }
@@ -79,7 +79,7 @@
   gap: 2px;
   margin-top: 12px;
   color: #079fd5;
-  font-size: 8px;
+  font-size: 13px;
   font-weight: 700;
   opacity: 0;
   transform: translateY(4px);
