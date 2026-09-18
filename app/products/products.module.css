@@ -1,0 +1,84 @@
+.page {
+  overflow-x: clip;
+}
+
+.page section {
+  scroll-margin-top: 7rem;
+}
+
+.productCard {
+  position: relative;
+  height: 100%;
+  border: 1px solid #cfe1e9;
+  border-top-width: 3px;
+  border-radius: 0.5rem;
+  background: #fff;
+  padding: 1.25rem;
+  transition:
+    transform 300ms ease,
+    box-shadow 300ms ease,
+    border-color 200ms ease;
+}
+
+.productCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgb(8 174 232 / 12%);
+}
+
+.cyanCard {
+  border-top-color: #08b7f2;
+}
+
+.cyanCard:hover {
+  animation: cyanBorderBlink 950ms ease-in-out infinite;
+}
+
+.pinkCard {
+  border-top-color: #f02d78;
+}
+
+.pinkCard:hover {
+  animation: pinkBorderBlink 950ms ease-in-out infinite;
+}
+
+@keyframes pinkBorderBlink {
+  0%,
+  100% {
+    border-top-color: #f02d78;
+  }
+  50% {
+    border-top-color: #ff9fc3;
+  }
+}
+
+@keyframes cyanBorderBlink {
+  0%,
+  100% {
+    border-top-color: #08b7f2;
+  }
+  50% {
+    border-top-color: #8be4fa;
+  }
+}
+
+.productCard:focus-within {
+  outline: 3px solid rgb(8 174 232 / 25%);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cyanCard:hover,
+  .pinkCard:hover {
+    animation: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .page section {
+    scroll-margin-top: 4rem;
+  }
+
+  .productCard {
+    padding: 1rem;
+  }
+}

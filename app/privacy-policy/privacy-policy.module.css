@@ -1,0 +1,17 @@
+.page {
+  overflow-x: clip;
+}
+
+.page :global(section) {
+  scroll-margin-top: 7rem;
+}
+
+.page :global(section h2) {
+  text-wrap: balance;
+}
+
+@media (max-width: 640px) {
+  .page :global(section) {
+    scroll-margin-top: 4rem;
+  }
+}

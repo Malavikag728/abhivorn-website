@@ -1,0 +1,130 @@
+.page {
+  overflow-x: clip;
+}
+
+.page :global(section) {
+  scroll-margin-top: 7rem;
+}
+
+.filter {
+  border: 1px solid #e0e9ee;
+  border-radius: 999px;
+  background: #f6f9fb;
+  color: #718697;
+  cursor: pointer;
+  font-size: 8px;
+  font-weight: 600;
+  padding: 4px 9px;
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.filter:hover {
+  border-color: #a8dff1;
+  color: #087f9c;
+  transform: translateY(-1px);
+}
+
+.activeFilter {
+  border-color: #08b7f2;
+  background: #08b7f2;
+  color: white;
+}
+
+.projectCard {
+  position: relative;
+  border: 1px solid #d3e1e8;
+  border-radius: 6px;
+  background: white;
+  padding: 18px;
+  transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+}
+
+.projectCard:hover,
+.projectCard:focus-visible {
+  border-color: #75cce6;
+  box-shadow: 0 14px 30px rgb(8 174 232 / 10%);
+  outline: none;
+  transform: translateY(-3px);
+}
+
+.category {
+  border-radius: 999px;
+  background: #e3f8fe;
+  color: #087f9c;
+  font-size: 7px;
+  font-weight: 600;
+  padding: 3px 7px;
+}
+
+.results {
+  margin-top: 12px;
+  border-radius: 5px;
+  background: #f5f8fa;
+  padding: 10px;
+}
+
+.tech {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  border: 1px solid #e0e9ee;
+  border-radius: 999px;
+  background: #f8fafb;
+  padding: 3px 6px;
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  margin-top: 12px;
+  color: #079fd5;
+  font-size: 8px;
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.projectCard:hover .cardLink,
+.projectCard:focus-visible .cardLink {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonial {
+  border: 1px solid #d3e1e8;
+  border-radius: 6px;
+  background: white;
+  padding: 16px;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.testimonial:hover {
+  box-shadow: 0 12px 25px rgb(8 174 232 / 9%);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 640px) {
+  .page :global(section) {
+    scroll-margin-top: 4rem;
+  }
+
+  .projectCard {
+    padding: 14px;
+  }
+
+  .cardLink {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .filter,
+  .projectCard,
+  .cardLink,
+  .testimonial {
+    transition: none;
+  }
+}

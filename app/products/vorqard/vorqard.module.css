@@ -1,0 +1,33 @@
+.page { overflow-x: clip; }
+.page :global(section) { scroll-margin-top: 7rem; }
+.badge { display: inline-flex; align-items: center; border-radius: 999px; background: #c9f3fa; color: #087f9c; font-size: 7px; font-weight: 700; padding: 5px 8px; }
+.primaryButton, .secondaryButton, .lightButton, .ctaOutline { display: inline-flex; align-items: center; justify-content: center; gap: 4px; border-radius: 5px; padding: 9px 14px; font-size: 8px; font-weight: 700; transition: transform 180ms ease, background-color 180ms ease; }
+.primaryButton { background: #08b7f2; color: white; box-shadow: 0 5px 14px rgb(8 174 232 / 18%); }
+.primaryButton:hover, .secondaryButton:hover, .lightButton:hover, .ctaOutline:hover { transform: translateY(-2px); }
+.secondaryButton { border: 1px solid #a9d9e5; color: #17364f; background: white; }
+.heroImage { position: relative; overflow: hidden; border-radius: 9px; box-shadow: 0 15px 30px rgb(8 99 125 / 18%); }
+.heroImage img { display: block; aspect-ratio: 1.4 / 1; width: 100%; object-fit: cover; }
+.heroImage span { position: absolute; bottom: 12px; left: 12px; color: white; font-size: 9px; font-weight: 700; text-shadow: 0 1px 3px rgb(0 0 0 / 50%); }
+.heroImage small { font-size: 6px; font-weight: 400; }
+.card, .setting { border: 1px solid #d3e1e8; border-radius: 7px; background: white; padding: 14px; transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease; }
+.card:hover, .setting:hover { border-color: #74cde5; box-shadow: 0 12px 25px rgb(8 174 232 / 9%); transform: translateY(-3px); }
+.cardIcon { display: flex; width: 30px; height: 30px; align-items: center; justify-content: center; border-radius: 5px; background: #e1f7fd; color: #08afe8; }
+.story { display: grid; align-items: center; gap: 28px; grid-template-columns: 1fr 1fr; }
+.storyReverse > div { order: 2; }
+.storyReverse > img { order: 1; }
+.story img { width: 100%; aspect-ratio: 1.65 / 1; border-radius: 8px; object-fit: cover; box-shadow: 0 10px 25px rgb(8 99 125 / 10%); }
+.storyBadge { display: inline-flex; margin-top: 10px; border-radius: 999px; background: #dff7fb; color: #087f9c; font-size: 7px; font-weight: 700; padding: 5px 8px; }
+.tag { border-radius: 999px; background: #f1f8fa; color: #718697; font-size: 6px; padding: 4px 6px; }
+.emailInput { min-width: 0; flex: 1; border: 1px solid #b9dce5; border-radius: 4px; padding: 8px; font-size: 8px; outline: none; }
+.emailInput:focus { border-color: #08afe8; box-shadow: 0 0 0 2px rgb(8 174 232 / 12%); }
+.faq { border: 1px solid #d3e1e8; border-radius: 5px; background: white; }
+.faq button { display: flex; width: 100%; align-items: center; justify-content: space-between; padding: 10px 12px; color: #17364f; cursor: pointer; font-size: 8px; text-align: left; }
+.faq p { border-top: 1px solid #edf2f4; padding: 9px 12px; color: #718697; font-size: 8px; line-height: 1.5; }
+.lightButton { background: white; color: #087f9c; }
+.ctaOutline { border: 1px solid white; color: white; }
+@media (max-width: 640px) {
+  .page :global(section) { scroll-margin-top: 4rem; }
+  .story, .storyReverse { grid-template-columns: 1fr; }
+  .storyReverse > div, .storyReverse > img { order: initial; }
+}
+@media (prefers-reduced-motion: reduce) { .primaryButton, .secondaryButton, .lightButton, .ctaOutline, .card, .setting { transition: none; } }
